@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Dash wallet, to load dashrevert address
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+<ion-card  class="datainput">
+<ion-card-header>
+Dash Testnet
+ <ion-button fill="clear" size="small" color="primary" (click)="generatetestnetwallet()"> Generate Dash wallet </ion-button>
+</ion-card-header>
+<ion-item>
+<ion-label position="stacked"> Dash Testnet spending address </ion-label>
+<ion-input readonly placeholder="Dash testnet spending address" [(ngModel)]="spendingtestnetaddress" > </ion-input>
+
+</ion-item>
+<ion-item>
+<ion-label position="stacked"> Spend amount </ion-label>
+<ion-input placeholder="Spend amount" [(ngModel)]="testnetspendamount" > </ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="stacked"> Dash testnet address to send </ion-label>
+<ion-input placeholder="Dash testnet address to send" [(ngModel)]="spendingtestnetaddress" > </ion-input>
+</ion-item>
+<ion-item>
+  Balance: 
+</ion-item>
+<ion-item>
+ <ion-button fill="clear" size="small" color="primary" (click)="savetestnetwallet()"> Save </ion-button>
+ <ion-button fill="clear" size="small" color="primary" (click)="gettestnetbalanace()"> Get balance </ion-button>
+ <ion-button fill="clear" size="small" color="primary" (click)="spendtestnet()"> Load  </ion-button>
+</ion-item>
+</ion-card>
+
+
+<ion-card  class="datainput">
+<ion-card-header>
+Dash Livenet
+ <ion-button fill="clear" size="small" color="primary" (click)="generatelivenetwallet()"> Generate Dash wallet </ion-button>
+</ion-card-header>
+<ion-item>
+<ion-label position="stacked"> Dash Livenet spending address </ion-label>
+<ion-input readonly placeholder="Dash livenet spending address" [(ngModel)]="spendinglivenetaddress" > </ion-input>
+
+</ion-item>
+<ion-item>
+<ion-label position="stacked"> Spend amount </ion-label>
+<ion-input placeholder="Spend amount" [(ngModel)]="livenetspendamount" > </ion-input>
+</ion-item>
+
+<ion-item>
+<ion-label position="stacked"> Dash livenet address to send </ion-label>
+<ion-input placeholder="Dash livenet address to send" [(ngModel)]="spendinglivenetaddress" > </ion-input>
+</ion-item>
+<ion-item>
+  Balance: 
+</ion-item>
+<ion-item>
+ <ion-button fill="clear" size="small" color="primary" (click)="savelivenetwallet()"> Save </ion-button>
+ <ion-button fill="clear" size="small" color="primary" (click)="getlivenetbalanace()"> Get balance </ion-button>
+ <ion-button fill="clear" size="small" color="primary" (click)="spendlivenet()"> Load  </ion-button>
+</ion-item>
+</ion-card>
+
+
+
+</ion-content>
